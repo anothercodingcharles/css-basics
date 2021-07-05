@@ -1,0 +1,66 @@
+Chapter 1 : Introduction to CSS
+
+
+Allows to separate your websites [HTML content] from their style.
+
+                        HTML -> arrange content
+                        CSS -> style content, presentation
+
+
+There are 3 ways on how to use CSS: Internal Stylesheet, External Stylesheet and Inline css.
+
+
+Internal Stylesheet
+
+<head>
+<title><title>
+<style type=”text/css”>
+CSS Content Goes Here
+</style>
+</head>
+<body>
+
+
+
+External Stylesheet 
+
+We can link the file by adding this line
+
+<link rel=”stylesheet” type=”text/css” href=“Path To stylesheet.css” />
+or
+<style type=”text/css”> @import url(Path To stylesheet.css) </style>
+
+
+Here are a few reasons this is better.
+
+Easier Maintenance
+Reduced File Size
+Reduced Bandwidth
+Improved Flexibility
+
+
+
+You can have both internal, external and inline style.
+
+
+<p style=”color: #ff0000;”>Some red text</p>
+
+
+All the various methods will cascade into a new “pseudo” stylesheet in the following order:
+
+Inline Style (inside (X)HTML element)
+Internal Style Sheet (inside the <head> tag)
+External Style Sheet
+
+
+Remember Inline, Internal,External.
+
+
+
+As far as which way is better, it depends on what you want to do. If you have only one file to style then placing it within the <head></head> tags (internal) will work fine. Though if you are planning on styling multiple files then the external file method is the way to go.
+
+Choosing between the <link related=> & the @import methods are completely up to you. I will mention that the @import method may take a second longer to read the CSS file in Internet Explorer than the <link related=> option. To combat this see Flash of unstyled content
+
+
+
+Users with Disabilities can benefit from externl stylesheets.
